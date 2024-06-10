@@ -9,4 +9,5 @@
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="hardware/qcom-caf/sm8450/display" name="android_hardware_qcom-caf_display" revision="udc-sm8450" remote="statix-minimal" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="statix-minimal" />
 </manifest>
