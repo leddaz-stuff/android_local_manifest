@@ -14,6 +14,11 @@
           fetch="https://git.codelinaro.org/clo/la"
           revision="refs/tags/LA.VENDOR.13.2.0.r1-22200-KAILUA.QSSI14.0" />
 
+  <!-- Statix -->
+  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr2" />
+  <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix" revision="udc-qpr2" />
+  <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" revision="udc-qpr2" />
+
   <!-- ANT -->
   <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" remote="caf_vendor" revision="refs/tags/LA.UM.9.2.c25-02200-SDMxx0.0" />
   <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" remote="caf_vendor" revision="refs/tags/LA.UM.9.2.c25-02200-SDMxx0.0" />
