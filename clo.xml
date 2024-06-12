@@ -14,6 +14,10 @@
           fetch="https://git.codelinaro.org/clo/la"
           revision="refs/tags/LA.VENDOR.13.2.0.r1-22200-KAILUA.QSSI14.0" />
 
+  <remote name="github"
+          fetch="https://github.com/"
+          revision="udc" />
+
   <!-- Statix -->
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr2" />
   <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix" revision="udc-qpr2" />
@@ -101,4 +105,6 @@
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform/vendor/qcom-opensource/display-commonsys-intf" remote="caf" />
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="statix" revision="udc"/>
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" remote="statix" revision="tm" />
+
+  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" revision="lineage-21.0" />
 </manifest>
