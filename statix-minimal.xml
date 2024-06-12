@@ -10,4 +10,5 @@
   </project>
   <project path="hardware/qcom-caf/sm8450/display" name="android_hardware_qcom-caf_display" revision="udc-sm8450" remote="statix-minimal" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="statix-minimal" />
+  <project path="vendor/prebuilts/fennec" name="android_vendor_prebuilts_fennec" remote="statix-minimal" revision="main" />
 </manifest>
