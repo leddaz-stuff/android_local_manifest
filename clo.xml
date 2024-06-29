@@ -36,7 +36,7 @@
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="android_device_qcom_sepolicy_vndr" remote="statix" revision="udc-legacy-um" />
 
   <!-- External -->
-  <project path="external/json-c" name="android_external_json-c" remote="statix" revision="tm" />
+  <project path="external/json-c" name="android_external_json-c" remote="statix" revision="udc" />
 
   <!-- Hardware -->
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="statix" revision="tm" >
