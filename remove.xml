@@ -71,7 +71,7 @@
   <remove-project name="device/linaro/poplar-kernel" />
 
   <!-- External -->
-  <remove-project name="external/tinycompress" />
+  <remove-project name="platform/external/tinycompress" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Browser2" />
