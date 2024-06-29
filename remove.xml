@@ -70,6 +70,9 @@
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
 
+  <!-- External -->
+  <remove-project name="external/tinycompress" />
+
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/Calendar" />
