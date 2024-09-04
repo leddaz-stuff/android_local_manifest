@@ -40,7 +40,7 @@
   <project path="external/json-c" name="android_external_json-c" remote="statix" revision="udc" />
 
   <!-- Hardware -->
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="statix" revision="tm" >
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="statix" revision="udc" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- Add guards for CAF repositories. -->
@@ -74,7 +74,7 @@
   <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="tm-caf-sdm845" remote="statix" />
   <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" revision="udc-caf-sdm845" remote="statix"  />
   <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="tm-caf-sdm845" remote="statix" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="tm-caf-sm8150" remote="statix" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="udc-caf-sm8150" remote="statix" />
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="udc-caf-sm8150" remote="statix"  />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="tm-caf-sm8150" remote="statix" />
   <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" revision="udc-caf-sm8250" remote="statix" />
@@ -102,8 +102,8 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="statix" revision="udc" />
   <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" remote="caf_vendor" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="statix" revision="udc" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="statix" revision="udc" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform/vendor/qcom-opensource/display-commonsys-intf" remote="caf" />
+  <project path="vendor/qcom/opensource/vibrator" name="statix-leddaz/android_vendor_qcom_opensource_vibrator" remote="github" revision="udc" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="statix" revision="udc" />
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="statix" revision="udc"/>
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" remote="statix" revision="tm" />
 
