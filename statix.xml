@@ -103,7 +103,7 @@
   <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" remote="caf_vendor" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="statix" revision="udc" />
   <project path="vendor/qcom/opensource/vibrator" name="statix-leddaz/android_vendor_qcom_opensource_vibrator" remote="github" revision="udc" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="statix" revision="udc" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform/vendor/qcom-opensource/display-commonsys-intf" remote="caf" />
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="statix" revision="udc"/>
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" remote="statix" revision="tm" />
 
