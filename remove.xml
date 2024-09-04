@@ -78,6 +78,9 @@
   <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
+  
+  <!-- Build -->
+  <remove-project name="platform/build/soong" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />

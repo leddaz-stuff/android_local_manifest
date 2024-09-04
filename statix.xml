@@ -19,6 +19,10 @@
           revision="udc" />
 
   <!-- Statix -->
+  <project path="build/soong" name="build/soong" remote="aosp-leddaz" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr3" />
   <project path="hardware/statix/compat" name="statix-leddaz/android_hardware_statix_compat" remote="github" revision="udc-qpr3" />
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" revision="udc-qpr3" />
