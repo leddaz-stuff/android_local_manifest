@@ -33,6 +33,9 @@
   <!-- Google Mobile Services -->
   <project path="vendor/partner_gms" name="LeddaZ/android_vendor_partner_gms" remote="gitea-priv" />
 
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware/libhardware" remote="aosp-leddaz" />
+
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages/apps/Settings" remote="aosp-leddaz" />
 
