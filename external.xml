@@ -34,6 +34,9 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+
+  <!-- Bionic -->
+  <project path="bionic" name="android_bionic" remote="leddaz-stuff" />
   
   <!-- External -->
   <project path="external/tinycompress" name="external/tinycompress" remote="aosp-leddaz" />
