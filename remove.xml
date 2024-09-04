@@ -79,7 +79,9 @@
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
   
+  
   <!-- Build -->
+  <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
 
   <!-- Frameworks -->
