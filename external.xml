@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- GitHub (leddaz-stuff) -->
+  <remote name="leddaz-stuff"
+          revision="vic"
+          fetch="https://github.com/leddaz-stuff" />
+
+  <!-- Gitea -->
+  <remote name="gitea"
+          revision="vic"
+          fetch="https://git.keksla.wtf/" />
+
+  <!-- Gitea private -->
+  <remote name="gitea-priv"
+          revision="vic"
+          fetch="ssh://git@git.keksla.wtf/" />
+
+  <!-- GitLab (aosp-leddaz) -->
+  <remote name="aosp-leddaz"
+          fetch="https://gitlab.com/aosp-leddaz/"
+          revision="vic" />
+
+  <!-- Build -->
+  <project path="build/make" name="build/make" remote="aosp-leddaz" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build/soong" remote="aosp-leddaz" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  
+  <!-- External -->
+  <project path="external/tinycompress" name="external/tinycompress" remote="aosp-leddaz" />
+  
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks/av" remote="aosp-leddaz" />
+  <project path="frameworks/base" name="LeddaZ/frameworks_base" remote="gitea" />
+  <project path="frameworks/native" name="frameworks/native" remote="aosp-leddaz" />
+
+  <!-- Google Mobile Services -->
+  <project path="vendor/partner_gms" name="LeddaZ/android_vendor_partner_gms" remote="gitea-priv" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware/libhardware" remote="aosp-leddaz" />
+  <project path="hardware/statix/compat" name="statix-leddaz/android_hardware_statix_compat" remote="github" revision="udc-qpr3" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" revision="lineage-21.0" />
+  <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" remote="github" revision="lineage-21.0" />
+  <project path="packages/apps/Settings" name="packages/apps/Settings" remote="aosp-leddaz" />
+
+  <!-- System -->
+  <project path="system/core" name="system/core" remote="aosp-leddaz" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/vibrator" name="statix-leddaz/android_vendor_qcom_opensource_vibrator" remote="github" revision="udc" />
+  <project path="vendor/statix" name="android_vendor_statix" remote="leddaz-stuff">
+    <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
+  </project>
+</manifest>

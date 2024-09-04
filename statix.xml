@@ -19,23 +19,8 @@
           revision="udc" />
 
   <!-- Statix -->
-  <project path="build/make" name="build/make" remote="aosp-leddaz" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/soong" name="build/soong" remote="aosp-leddaz" groups="pdk,tradefed" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr3" />
-  <project path="hardware/statix/compat" name="statix-leddaz/android_hardware_statix_compat" remote="github" revision="udc-qpr3" />
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" revision="udc-qpr3" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" revision="udc-qpr3" />
 
   <!-- ANT -->
   <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" remote="caf_vendor" revision="refs/tags/LA.UM.9.2.c25-02200-SDMxx0.0" />
@@ -115,11 +100,7 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="statix" revision="udc" />
   <project path="vendor/qcom/opensource/thermal-engine" name="platform/vendor/qcom-opensource/thermal-engine" remote="caf_vendor" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="statix" revision="udc" />
-  <project path="vendor/qcom/opensource/vibrator" name="statix-leddaz/android_vendor_qcom_opensource_vibrator" remote="github" revision="udc" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="statix" revision="udc" />
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="statix" revision="udc"/>
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" remote="statix" revision="tm" />
-
-  <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" revision="lineage-21.0" />
-  <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" remote="github" revision="lineage-21.0" />
 </manifest>
