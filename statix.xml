@@ -20,7 +20,7 @@
 
   <!-- Statix -->
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr3" />
-  <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix" revision="udc-qpr3" />
+  <project path="hardware/statix/compat" name="statix-leddaz/android_hardware_statix_compat" remote="github" revision="udc-qpr3" />
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" revision="udc-qpr3" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" revision="udc-qpr3" />
 
@@ -108,4 +108,5 @@
   <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" remote="statix" revision="tm" />
 
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" revision="lineage-21.0" />
+  <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" remote="github" revision="lineage-21.0" />
 </manifest>
