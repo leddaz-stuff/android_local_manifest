@@ -18,10 +18,6 @@
           fetch="https://github.com/"
           revision="udc" />
 
-  <!-- Statix -->
-  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr3" />
-  <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" revision="udc-qpr3" />
-
   <!-- ANT -->
   <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" remote="caf_vendor" revision="refs/tags/LA.UM.9.2.c25-02200-SDMxx0.0" />
   <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" remote="caf_vendor" revision="refs/tags/LA.UM.9.2.c25-02200-SDMxx0.0" />
@@ -33,6 +29,7 @@
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="statix" revision="udc" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="statix" revision="udc" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="android_device_qcom_sepolicy_vndr" remote="statix" revision="udc-legacy-um" />
+  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="udc-qpr3" />
 
   <!-- External -->
   <project path="external/json-c" name="android_external_json-c" remote="statix" revision="udc" />
