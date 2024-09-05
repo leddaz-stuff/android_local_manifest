@@ -51,6 +51,16 @@
 
   <!-- Hardware -->
   <project path="hardware/libhardware" name="hardware/libhardware" remote="aosp-leddaz" />
+  <project path="hardware/qcom-caf/kernel-headers" name="aosp-sunny/android_hardware_qcom-caf_kernel-headers" remote="github" revision="vic-caf">
+    <!-- Add guards for CAF repositories. -->
+    <linkfile src="msm-4.4" dest="hardware/qcom-caf/msm8998/kernel-headers" />
+    <linkfile src="msm-4.9" dest="hardware/qcom-caf/sdm845/kernel-headers" />
+    <linkfile src="msm-4.14" dest="hardware/qcom-caf/sm8150/kernel-headers" />
+    <linkfile src="msm-4.19" dest="hardware/qcom-caf/sm8250/kernel-headers" />
+    <linkfile src="msm-5.4" dest="hardware/qcom-caf/sm8350/kernel-headers" />
+    <linkfile src="msm-5.10" dest="hardware/qcom-caf/sm8450/kernel-headers" />
+  </project>
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware/qcom-caf/sm8150/audio" revision="vic-caf-sm8150" remote="aosp-leddaz" />
   <project path="hardware/statix/compat" name="statix-leddaz/android_hardware_statix_compat" remote="github" revision="udc-qpr3" />
 
   <!-- Packages -->
@@ -62,6 +72,7 @@
   <project path="system/core" name="system/core" remote="aosp-leddaz" />
 
   <!-- Vendor -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-nogki" name="aosp-sunny/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="vic-nogki" />
   <project path="vendor/qcom/opensource/vibrator" name="statix-leddaz/android_vendor_qcom_opensource_vibrator" remote="github" revision="udc" />
   <project path="vendor/statix" name="android_vendor_statix" remote="leddaz-stuff">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
